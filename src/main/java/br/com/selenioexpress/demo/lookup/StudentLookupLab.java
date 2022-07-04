@@ -1,4 +1,4 @@
-package br.com.selenioexpress.demo.proxy;
+package br.com.selenioexpress.demo.lookup;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
@@ -8,11 +8,11 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 
 @Component
-@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.TARGET_CLASS)
-public class Student {
+@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+public class StudentLookupLab {
     private String name;
 
-    public Student() {
+    public StudentLookupLab() {
         //test different random names
         this.name = UUID.randomUUID().toString();
     }

@@ -8,18 +8,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
-public class School {
+public class SchoolProxyLab {
     private String name;
     @Autowired
-    private Student student;
+    private StudentProxyLab studentProxyLab;
 
 
     public String getName() {
         return name;
     }
 
-    public Student getStudent() {
-        return student;
+    public StudentProxyLab getStudent() {
+        return studentProxyLab;
     }
 
 
