@@ -1,9 +1,9 @@
-package br.com.selenioexpress.demo;
+package br.com.selenioexpress.demo.webawarescopes;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Scope("request")
-public class RequestDemo {
+public class RequestScopeOutOfWebApplicationContextDemo {
 }
