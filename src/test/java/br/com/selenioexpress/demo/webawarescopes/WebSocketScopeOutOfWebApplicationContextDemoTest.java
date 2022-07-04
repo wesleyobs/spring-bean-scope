@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class WebSocketScopeOutOfWebApplicationContextDemoTest {
     /**
-     * The exception IllegalStateException is thrown because is not possible to create a web socket scope bean for a non web application.
+     * The exception IllegalStateException is thrown because is not possible to create a web socket s cope bean for a non web application.
      */
     @Test
     public void testWebSocketBeanScopeInjection() {
